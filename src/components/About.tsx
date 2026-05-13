@@ -8,14 +8,14 @@ import { SITE } from '../site.config'
 const COPY = {
   eyebrow: 'sobre mim',
   heading: 'Por 20 anos, fui atriz. Aprendi a ler',
-  headingEm: 'o invisivel nas pessoas.',
+  headingEm: 'o invisível nas pessoas.',
   paragraphs: [
-    'Mas por dentro, eu era a mulher que, por mais que se esforçasse, sempre acabava no mesmo lugar. Mesmos padroes. Mesma sensacao de nao ser o suficiente. Sabia o nome dos meus problemas. Mas a dor nao parava.',
-    'Em 2019, ao encontrar a Fisica Quantica, entendi pela primeira vez que o problema nao estava na minha mente. Estava no meu campo vibracional, no que eu carregava sem perceber.',
-    'Hoje, formada por grandes mestres como Elaine Ourives e influenciada por Joe Dispenza e Helio Couto, uso minha sensibilidade artistica e tecnica para ler o invisivel no campo das minhas clientes. Nao sou apenas uma estudiosa. Sou a prova viva do que ensino.',
+    'Mas por dentro, eu era a mulher que, por mais que se esforçasse, sempre acabava no mesmo lugar. Mesmos padrões. Mesma sensação de não ser o suficiente. Sabia o nome dos meus problemas. Mas a dor não parava.',
+    'Em 2019, ao encontrar a Física Quântica, entendi pela primeira vez que o problema não estava na minha mente. Estava no meu campo vibracional, no que eu carregava sem perceber.',
+    'Hoje, formada por grandes mestres como Elaine Ourives e influenciada por Joe Dispenza e Hélio Couto, uso minha sensibilidade artística e técnica para ler o invisível no campo das minhas clientes. Não sou apenas uma estudiosa. Sou a prova viva do que ensino.',
   ],
-  transition: 'A proxima sessao pode ser o seu marco zero.',
-  ctaText: 'Agendar minha Sessao',
+  transition: 'A próxima sessão pode ser o seu marco zero.',
+  ctaText: 'Agendar minha Sessão',
 }
 // ════════════════════════════════════════════════════════════════════
 

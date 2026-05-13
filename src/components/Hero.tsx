@@ -7,10 +7,10 @@ import { SITE } from '../site.config'
 // ════════════════════════════════════════════════════════════════════
 const COPY = {
   callout: 'TERAPIA VIBRACIONAL PREMIUM',
-  h1: 'Voce cuida de todo mundo.',
-  h1Em: 'Mas quem cuida de voce?',
-  subtitle: 'Sessao Clareza e Reconexao com Bruna Casagrande. O caminho de volta para si mesma.',
-  ctaPrimary: 'Agendar minha Sessao',
+  h1: 'Você cuida de todo mundo.',
+  h1Em: 'Mas quem cuida de você?',
+  subtitle: 'Sessão Clareza e Reconexão com Bruna Casagrande. O caminho de volta para si mesma.',
+  ctaPrimary: 'Agendar minha Sessão',
   ctaSecondary: 'ou entender como funciona',
 }
 // ════════════════════════════════════════════════════════════════════
@@ -40,34 +40,12 @@ export default function Hero() {
         <div
           className="absolute rounded-full blur-3xl"
           style={{
-            width: '520px',
-            height: '520px',
-            background: 'color-mix(in srgb, var(--color-primary) 25%, transparent)',
-            top: '-10%',
-            right: '5%',
-            animation: 'aurora-1 18s ease-in-out infinite',
-          }}
-        />
-        <div
-          className="absolute rounded-full blur-3xl"
-          style={{
             width: '400px',
             height: '400px',
-            background: 'color-mix(in srgb, var(--color-secondary) 22%, transparent)',
+            background: 'color-mix(in srgb, var(--color-secondary) 18%, transparent)',
             bottom: '10%',
             left: '10%',
             animation: 'aurora-2 22s ease-in-out infinite',
-          }}
-        />
-        <div
-          className="absolute rounded-full blur-3xl"
-          style={{
-            width: '300px',
-            height: '300px',
-            background: 'color-mix(in srgb, var(--color-bg-warm) 13%, transparent)',
-            top: '40%',
-            left: '35%',
-            animation: 'aurora-3 15s ease-in-out infinite',
           }}
         />
       </div>

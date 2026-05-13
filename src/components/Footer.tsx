@@ -5,11 +5,11 @@ import { SITE } from '../site.config'
 // COPY — SUBSTITUIR POR CLIENTE (lp-copy.md → Bloco 8 Footer/CTA Final)
 // ════════════════════════════════════════════════════════════════════
 const COPY = {
-  eyebrow: 'proximo passo',
-  heading: 'Se o que voce leu aqui fez sentido, talvez seja hora de',
+  eyebrow: 'próximo passo',
+  heading: 'Se o que você leu aqui fez sentido, talvez seja hora de',
   headingEm: 'voltar para si mesma.',
-  subtitle: 'A sessao inicial e gratuita e sem compromisso.',
-  ctaText: 'Agendar minha Sessao Clareza e Reconexao',
+  subtitle: 'A sessão inicial é gratuita e sem compromisso.',
+  ctaText: 'Agendar minha Sessão Clareza e Reconexão',
 }
 // ════════════════════════════════════════════════════════════════════
 

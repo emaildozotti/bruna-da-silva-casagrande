@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { FadeIn } from './FadeIn'
 
@@ -11,17 +11,17 @@ const COPY = {
   headingEm: 'o caminho de volta.',
   testimonials: [
     {
-      text: 'Entrei na sessao sem acreditar muito. Sai sem conseguir explicar o que aconteceu. Em um encontro, a Bruna foi fundo em algo que eu carregava ha mais de dez anos. A leveza que senti depois era algo que eu nao lembrava mais como era.',
+      text: 'Entrei na sessão sem acreditar muito. Saí sem conseguir explicar o que aconteceu. Em um encontro, a Bruna foi fundo em algo que eu carregava há mais de dez anos. A leveza que senti depois era algo que eu não lembrava mais como era.',
       name: 'M. F., 41 anos',
-      highlight: 'a Bruna foi fundo em algo que eu carregava ha mais de dez anos',
+      highlight: 'a Bruna foi fundo em algo que eu carregava há mais de dez anos',
     },
     {
-      text: 'Fiz terapia por seis anos. Sabia meu problema de cor. Mas continuava repetindo os mesmos padroes nos relacionamentos. Com a Bruna, pela primeira vez, algo mudou de verdade. Nao so na minha cabeca, no meu comportamento.',
+      text: 'Fiz terapia por seis anos. Sabia meu problema de cor. Mas continuava repetindo os mesmos padrões nos relacionamentos. Com a Bruna, pela primeira vez, algo mudou de verdade. Não só na minha cabeça, no meu comportamento.',
       name: 'R. S., 36 anos',
       highlight: 'com a Bruna, pela primeira vez, algo mudou de verdade',
     },
     {
-      text: 'Eu era a mulher forte que nao pedia ajuda. Ate nao aguentar mais o peso. Na sessao com a Bruna, entendi onde esse peso veio e pude, finalmente, soltar. Nao sai pronta. Sai no caminho certo.',
+      text: 'Eu era a mulher forte que não pedia ajuda. Até não aguentar mais o peso. Na sessão com a Bruna, entendi onde esse peso veio e pude, finalmente, soltar. Não saí pronta. Saí no caminho certo.',
       name: 'C. L., 44 anos',
       highlight: 'entendi onde esse peso veio e pude, finalmente, soltar',
     },
@@ -31,13 +31,33 @@ const COPY = {
 
 export default function Testimonials() {
   const [current, setCurrent] = useState(0)
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
-  useEffect(() => {
-    const timer = setInterval(() => {
+  const startAutoRotate = () => {
+    if (timerRef.current) clearInterval(timerRef.current)
+    timerRef.current = setInterval(() => {
       setCurrent((prev) => (prev + 1) % COPY.testimonials.length)
     }, 15000)
-    return () => clearInterval(timer)
+  }
+
+  const stopAutoRotate = () => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current)
+      timerRef.current = null
+    }
+  }
+
+  useEffect(() => {
+    startAutoRotate()
+    return () => stopAutoRotate()
   }, [])
+
+  const goTo = (i: number) => {
+    stopAutoRotate()
+    setCurrent(i)
+  }
+  const next = () => goTo((current + 1) % COPY.testimonials.length)
+  const prev = () => goTo((current - 1 + COPY.testimonials.length) % COPY.testimonials.length)
 
   const t = COPY.testimonials[current]
 
@@ -145,26 +165,83 @@ export default function Testimonials() {
           </div>
         </FadeIn>
 
-        {/* Progress bars */}
+        {/* Controls — arrows + bullets */}
         <FadeIn delay={0.2}>
-          <div className="flex items-center gap-3 mt-10">
-            {COPY.testimonials.map((_, i) => (
+          <div className="flex items-center justify-between gap-6 mt-10">
+            {/* Bullets */}
+            <div className="flex items-center gap-3">
+              {COPY.testimonials.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => goTo(i)}
+                  className="transition-all duration-500 cursor-pointer"
+                  style={{
+                    width: i === current ? '28px' : '8px',
+                    height: '2px',
+                    backgroundColor: 'var(--color-secondary)',
+                    opacity: i === current ? 1 : 0.3,
+                    border: 'none',
+                    padding: 0,
+                    borderRadius: '1px',
+                  }}
+                  aria-label={`Depoimento ${i + 1}`}
+                />
+              ))}
+            </div>
+
+            {/* Arrows */}
+            <div className="flex items-center gap-3">
               <button
-                key={i}
-                onClick={() => setCurrent(i)}
-                className="transition-all duration-500 cursor-pointer"
+                onClick={prev}
+                className="flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
-                  width: i === current ? '28px' : '8px',
-                  height: '2px',
-                  backgroundColor: 'var(--color-secondary)',
-                  opacity: i === current ? 1 : 0.3,
-                  border: 'none',
-                  padding: 0,
-                  borderRadius: '1px',
+                  width: '44px',
+                  height: '44px',
+                  borderRadius: '50%',
+                  backgroundColor: 'transparent',
+                  border: `1px solid color-mix(in srgb, var(--color-secondary) 35%, transparent)`,
+                  color: 'var(--color-secondary)',
                 }}
-                aria-label={`Depoimento ${i + 1}`}
-              />
-            ))}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLButtonElement).style.backgroundColor = `color-mix(in srgb, var(--color-secondary) 12%, transparent)`
+                  ;(e.currentTarget as HTMLButtonElement).style.borderColor = `color-mix(in srgb, var(--color-secondary) 65%, transparent)`
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'transparent'
+                  ;(e.currentTarget as HTMLButtonElement).style.borderColor = `color-mix(in srgb, var(--color-secondary) 35%, transparent)`
+                }}
+                aria-label="Depoimento anterior"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button
+                onClick={next}
+                className="flex items-center justify-center cursor-pointer transition-all duration-300"
+                style={{
+                  width: '44px',
+                  height: '44px',
+                  borderRadius: '50%',
+                  backgroundColor: 'transparent',
+                  border: `1px solid color-mix(in srgb, var(--color-secondary) 35%, transparent)`,
+                  color: 'var(--color-secondary)',
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLButtonElement).style.backgroundColor = `color-mix(in srgb, var(--color-secondary) 12%, transparent)`
+                  ;(e.currentTarget as HTMLButtonElement).style.borderColor = `color-mix(in srgb, var(--color-secondary) 65%, transparent)`
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'transparent'
+                  ;(e.currentTarget as HTMLButtonElement).style.borderColor = `color-mix(in srgb, var(--color-secondary) 35%, transparent)`
+                }}
+                aria-label="Próximo depoimento"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
           </div>
         </FadeIn>
       </div>

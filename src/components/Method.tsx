@@ -5,28 +5,28 @@ import { FadeIn } from './FadeIn'
 // ════════════════════════════════════════════════════════════════════
 const COPY = {
   eyebrow: 'minha abordagem',
-  heading: 'Integracao Vibracional: o que a fala nao alcanca, o campo revela.',
-  intro: 'Nao e uma tecnica. E uma sinergia entre ciencia e espiritualidade que acessa o que anos de terapia convencional nao alcancam.',
+  heading: 'Integração Vibracional: o que a fala não alcança, o campo revela.',
+  intro: 'Não é uma técnica. É uma sinergia entre ciência e espiritualidade que acessa o que anos de terapia convencional não alcançam.',
   pillars: [
     {
-      title: 'Diagnostico Energetico',
-      body: 'Atraves da Radiestesia, leio o que voce carrega no campo vibracional. O que a boca nao fala e o corpo ainda guarda. Nao suposicoes. Precisao.',
+      title: 'Diagnóstico Energético',
+      body: 'Através da Radiestesia, leio o que você carrega no campo vibracional. O que a boca não fala e o corpo ainda guarda. Não suposições. Precisão.',
       expanded: false,
     },
     {
-      title: 'Reprogramacao e Reconexao',
-      body: 'A Fisica Quantica e a PNL reprogramam a narrativa interna que te mantem presa nos mesmos ciclos. Nao apenas entender o padrao, mas libertar-se dele de forma concreta.',
+      title: 'Reprogramação e Reconexão',
+      body: 'A Física Quântica e a PNL reprogramam a narrativa interna que te mantém presa nos mesmos ciclos. Não apenas entender o padrão, mas libertar-se dele de forma concreta.',
       expanded: true,
     },
     {
       title: 'Amparo Espiritual',
-      body: 'A canalizacao personalizada traz um amparo que torna cada sessao unica. Nao e religiao. E a dimensao invisivel que voce carrega e que eu sei acessar.',
+      body: 'A canalização personalizada traz um amparo que torna cada sessão única. Não é religião. É a dimensão invisível que você carrega e que eu sei acessar.',
       expanded: false,
     },
   ],
   pillarCentralLabel: 'pilar central',
-  naoPrometo: 'Nao prometo retorno de ex-parceiros, curas milagrosas sem o seu engajamento ou interferencia no livre-arbitrio de ninguem. Prometo presenca total, diagnostico preciso e uma sessao que vai fundo onde a dor realmente esta.',
-  transition: 'Antes de ser terapeuta, fui a cliente mais resistente que existe. Deixa eu te contar por que.',
+  naoPrometo: 'Não prometo retorno de ex-parceiros, curas milagrosas sem o seu engajamento ou interferência no livre-arbítrio de ninguém. Prometo presença total, diagnóstico preciso e uma sessão que vai fundo onde a dor realmente está.',
+  transition: 'Antes de ser terapeuta, fui a cliente mais resistente que existe. Deixa eu te contar por quê.',
 }
 // ════════════════════════════════════════════════════════════════════
 

@@ -6,28 +6,28 @@ import { FadeIn } from './FadeIn'
 // COPY — SUBSTITUIR POR CLIENTE (lp-copy.md → Bloco 8 FAQ)
 // ════════════════════════════════════════════════════════════════════
 const COPY = {
-  eyebrow: 'duvidas frequentes',
+  eyebrow: 'dúvidas frequentes',
   heading: 'Perguntas frequentes',
   faqs: [
     {
-      q: 'Isso e o mesmo que terapia convencional?',
-      a: 'Nao. A terapia convencional trabalha com o que voce conta, com o consciente. Meu trabalho acessa o campo vibracional e o subconsciente, o que voce carrega sem perceber e que a fala nao alcanca. Os dois podem coexistir, mas atuam em camadas diferentes.',
+      q: 'Isso é o mesmo que terapia convencional?',
+      a: 'Não. A terapia convencional trabalha com o que você conta, com o consciente. Meu trabalho acessa o campo vibracional e o subconsciente, o que você carrega sem perceber e que a fala não alcança. Os dois podem coexistir, mas atuam em camadas diferentes.',
     },
     {
-      q: 'Ja fiz muita terapia e nao mudei. Isso vai ser diferente?',
-      a: 'Essa e a pergunta que mais ouço. A resposta esta em onde cada abordagem atua. Se voce ja entende seu problema mas continua repetindo o mesmo padrao, e sinal de que precisa de um acesso diferente. E exatamente isso que faco.',
+      q: 'Já fiz muita terapia e não mudei. Isso vai ser diferente?',
+      a: 'Essa é a pergunta que mais ouço. A resposta está em onde cada abordagem atua. Se você já entende seu problema mas continua repetindo o mesmo padrão, é sinal de que precisa de um acesso diferente. É exatamente isso que faço.',
     },
     {
       q: 'Quanto tempo leva para ver resultado?',
-      a: 'Uma sessao profunda pode gerar uma virada de chave real. Nao prometo decadas de processo. Prometo presenca e diagnostico precisos. O tempo de integracao varia para cada pessoa, mas o movimento comeca na sessao.',
+      a: 'Uma sessão profunda pode gerar uma virada de chave real. Não prometo décadas de processo. Prometo presença e diagnóstico precisos. O tempo de integração varia para cada pessoa, mas o movimento começa na sessão.',
     },
     {
       q: 'Preciso acreditar em espiritualidade para funcionar?',
-      a: 'Nao. Trabalho a partir da Fisica Quantica e da Radiestesia, que tem embasamento tecnico e cientifico. A dimensao espiritual complementa, mas nao e requisito. O que importa e a sua abertura para o processo.',
+      a: 'Não. Trabalho a partir da Física Quântica e da Radiestesia, que têm embasamento técnico e científico. A dimensão espiritual complementa, mas não é requisito. O que importa é a sua abertura para o processo.',
     },
     {
       q: 'Como funciona o agendamento?',
-      a: 'Voce clica no botao abaixo, e direcionada para o meu WhatsApp e agendamos juntas. O atendimento e 100% online. A primeira sessao e o nosso encontro inicial, gratuito, para entender se faz sentido para voce.',
+      a: 'Você clica no botão abaixo, é direcionada para o meu WhatsApp e agendamos juntas. O atendimento é 100% online. A primeira sessão é o nosso encontro inicial, gratuito, para entender se faz sentido para você.',
     },
   ],
 }

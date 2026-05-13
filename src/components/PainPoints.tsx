@@ -4,15 +4,15 @@ import { FadeIn } from './FadeIn'
 // COPY — SUBSTITUIR POR CLIENTE (lp-copy.md → Bloco 2 Pain Points)
 // ════════════════════════════════════════════════════════════════════
 const COPY = {
-  heading: 'Voce reconhece',
-  headingEm: 'alguma dessas situacoes?',
+  heading: 'Você reconhece',
+  headingEm: 'alguma dessas situações?',
   pains: [
-    'Voce tem sucesso, reconhecimento e uma vida que parece perfeita por fora. Mas carrega uma solidao que nao consegue explicar para ninguem.',
-    'Voce sabe exatamente de onde vem a sua dor. Leu sobre isso, fez terapia. Mas na hora que importa, reage igual de sempre.',
-    'Cada relacionamento comeca diferente. Mas a sensacao de nao ser vista, de amar alguem que nao consegue estar presente, e sempre a mesma.',
-    'Voce foi criada para ser forte, resolver, nao pedir ajuda. E agora carrega o peso de todo mundo sem que ninguem perceba que voce tambem precisa de cuidado.',
+    'Você tem sucesso, reconhecimento e uma vida que parece perfeita por fora. Mas carrega uma solidão que não consegue explicar para ninguém.',
+    'Você sabe exatamente de onde vem a sua dor. Leu sobre isso, fez terapia. Mas na hora que importa, reage igual de sempre.',
+    'Cada relacionamento começa diferente. Mas a sensação de não ser vista, de amar alguém que não consegue estar presente, é sempre a mesma.',
+    'Você foi criada para ser forte, resolver, não pedir ajuda. E agora carrega o peso de todo mundo sem que ninguém perceba que você também precisa de cuidado.',
   ],
-  transition: 'Essa confusao tem nome. E tem saida.',
+  transition: 'Essa confusão tem nome. E tem saída.',
 }
 // ════════════════════════════════════════════════════════════════════
 

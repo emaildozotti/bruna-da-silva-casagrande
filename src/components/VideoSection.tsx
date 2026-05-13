@@ -8,9 +8,9 @@ import { SITE } from '../site.config'
 // ════════════════════════════════════════════════════════════════════
 const COPY = {
   heading: 'Assista e entenda',
-  headingEm: 'como funciona a sessao.',
-  preText: 'Fui atriz por 20 anos. Aprendi a ler o que as pessoas escondem de si mesmas. Hoje uso essa leitura para te ajudar a enxergar o que voce ainda nao viu.',
-  postText: 'Se algo aqui ressoou, continue lendo. O proximo passo esta mais perto do que voce imagina.',
+  headingEm: 'como funciona a sessão.',
+  preText: 'Fui atriz por 20 anos. Aprendi a ler o que as pessoas escondem de si mesmas. Hoje uso essa leitura para te ajudar a enxergar o que você ainda não viu.',
+  postText: 'Se algo aqui ressoou, continue lendo. O próximo passo está mais perto do que você imagina.',
 }
 // ════════════════════════════════════════════════════════════════════
 

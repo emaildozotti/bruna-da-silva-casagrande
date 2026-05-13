@@ -6,23 +6,23 @@ import { SITE } from '../site.config'
 // ════════════════════════════════════════════════════════════════════
 const COPY = {
   eyebrow: 'processo',
-  heading: 'Como funciona a Sessao Clareza e Reconexao',
+  heading: 'Como funciona a Sessão Clareza e Reconexão',
   steps: [
     {
-      title: 'Diagnostico do seu campo',
-      body: 'Comeco lendo o que voce carrega energeticamente. O que o campo vibra mesmo antes de voce falar. Isso nos da precisao sobre onde esta a raiz do seu padrao.',
+      title: 'Diagnóstico do seu campo',
+      body: 'Começo lendo o que você carrega energeticamente. O que o campo vibra mesmo antes de você falar. Isso nos dá precisão sobre onde está a raiz do seu padrão.',
     },
     {
-      title: 'Integracao e reprogramacao',
-      body: 'Trabalhamos juntas no nivel onde a mudanca acontece de verdade: o campo vibracional e o subconsciente. Sem anos de processo. Uma sessao profunda tem o poder de gerar uma virada de chave real.',
+      title: 'Integração e reprogramação',
+      body: 'Trabalhamos juntas no nível onde a mudança acontece de verdade: o campo vibracional e o subconsciente. Sem anos de processo. Uma sessão profunda tem o poder de gerar uma virada de chave real.',
     },
     {
-      title: 'Ancora e continuidade',
-      body: 'Voce recebe o audio da sessao e material complementar para reforcar a integracao. O caminho de volta para si mesma nao termina quando a sessao acaba.',
+      title: 'Âncora e continuidade',
+      body: 'Você recebe o áudio da sessão e material complementar para reforçar a integração. O caminho de volta para si mesma não termina quando a sessão acaba.',
     },
   ],
-  note: 'O atendimento e 100% online, por videochamada. Voce precisa apenas de um lugar silencioso e 60 minutos de presenca.',
-  ctaText: 'Quero agendar minha sessao',
+  note: 'O atendimento é 100% online, por videochamada. Você precisa apenas de um lugar silencioso e 60 minutos de presença.',
+  ctaText: 'Quero agendar minha sessão',
 }
 // ════════════════════════════════════════════════════════════════════
 
