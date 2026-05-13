@@ -78,9 +78,17 @@ export default function VideoSection() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                     className="absolute inset-0 flex flex-col items-center justify-center"
-                    style={{
-                      background: `linear-gradient(160deg, var(--color-dark) 0%, color-mix(in srgb, var(--color-primary) 40%, var(--color-dark)) 50%, var(--color-dark) 100%)`,
-                    }}
+                    style={
+                      SITE.videoPoster
+                        ? {
+                            backgroundImage: `url(${SITE.videoPoster})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                          }
+                        : {
+                            background: `linear-gradient(160deg, var(--color-dark) 0%, color-mix(in srgb, var(--color-primary) 40%, var(--color-dark)) 50%, var(--color-dark) 100%)`,
+                          }
+                    }
                   >
                     {/* Subtle aurora glow */}
                     <div

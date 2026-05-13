@@ -21,7 +21,7 @@ const COPY = {
       body: 'Você recebe o áudio da sessão e material complementar para reforçar a integração. O caminho de volta para si mesma não termina quando a sessão acaba.',
     },
   ],
-  note: 'O atendimento é 100% online, por videochamada. Você precisa apenas de um lugar silencioso e 60 minutos de presença.',
+  note: 'O atendimento é 100% online, por videochamada. Você precisa apenas de um lugar silencioso e duas horas de presença.',
   ctaText: 'Quero agendar minha sessão',
 }
 // ════════════════════════════════════════════════════════════════════
