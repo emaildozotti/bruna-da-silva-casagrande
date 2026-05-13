@@ -111,7 +111,7 @@ export default function Hero() {
               className="text-3xl md:text-4xl lg:text-5xl leading-tight"
               style={{
                 fontFamily: 'var(--font-display)',
-                color: 'var(--color-off-white)',
+                color: 'var(--color-primary)',
                 fontWeight: 400,
               }}
             >
@@ -127,7 +127,7 @@ export default function Hero() {
               className="text-lg md:text-xl leading-relaxed"
               style={{
                 fontFamily: 'var(--font-sans)',
-                color: 'var(--color-bg-warm)',
+                color: 'var(--color-primary)',
                 fontWeight: 300,
                 maxWidth: '420px',
               }}
@@ -161,7 +161,7 @@ export default function Hero() {
                 onClick={scrollToDores}
                 className="flex items-center justify-center gap-2 text-sm cursor-pointer"
                 style={{
-                  color: 'var(--color-bg-warm)',
+                  color: 'var(--color-primary)',
                   fontFamily: 'var(--font-sans)',
                   fontWeight: 400,
                   opacity: 0.7,

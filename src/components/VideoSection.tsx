@@ -34,7 +34,7 @@ export default function VideoSection() {
               className="text-3xl md:text-4xl lg:text-5xl leading-tight text-center"
               style={{
                 fontFamily: 'var(--font-display)',
-                color: 'var(--color-off-white)',
+                color: 'var(--color-primary)',
                 fontWeight: 400,
               }}
             >
@@ -48,7 +48,7 @@ export default function VideoSection() {
               className="text-base md:text-lg leading-relaxed text-center"
               style={{
                 fontFamily: 'var(--font-sans)',
-                color: 'var(--color-bg-warm)',
+                color: 'var(--color-primary)',
                 fontWeight: 300,
                 maxWidth: '600px',
                 margin: '0 auto',
@@ -128,7 +128,7 @@ export default function VideoSection() {
                         fontFamily: 'var(--font-display)',
                         fontSize: '8rem',
                         lineHeight: 1,
-                        color: 'var(--color-off-white)',
+                        color: 'var(--color-primary)',
                         opacity: 0.03,
                         userSelect: 'none',
                         pointerEvents: 'none',
@@ -200,7 +200,7 @@ export default function VideoSection() {
                       <span
                         className="eyebrow-ultra"
                         style={{
-                          color: 'var(--color-off-white)',
+                          color: 'var(--color-primary)',
                           opacity: 0.25,
                           fontSize: '8px',
                         }}
@@ -256,7 +256,7 @@ export default function VideoSection() {
               className="text-sm md:text-base text-center"
               style={{
                 fontFamily: 'var(--font-sans)',
-                color: 'var(--color-bg-warm)',
+                color: 'var(--color-primary)',
                 fontWeight: 300,
                 opacity: 0.7,
                 maxWidth: '440px',

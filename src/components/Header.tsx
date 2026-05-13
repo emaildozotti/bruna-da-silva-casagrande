@@ -26,7 +26,7 @@ export default function Header() {
           opacity: glassOpacity,
           backdropFilter: 'blur(24px) saturate(1.6)',
           WebkitBackdropFilter: 'blur(24px) saturate(1.6)',
-          background: 'linear-gradient(135deg, rgba(8,12,18,0.72) 0%, rgba(13,17,23,0.58) 50%, rgba(8,12,18,0.72) 100%)',
+          background: 'linear-gradient(135deg, rgba(245,239,230,0.82) 0%, rgba(232,221,208,0.72) 50%, rgba(245,239,230,0.82) 100%)',
           borderBottom: `1px solid color-mix(in srgb, var(--color-secondary) 8%, transparent)`,
         }}
       />
@@ -72,7 +72,7 @@ export default function Header() {
                 fontFamily: 'var(--font-display)',
                 fontSize: '15px',
                 letterSpacing: '0.01em',
-                color: 'var(--color-off-white)',
+                color: 'var(--color-primary)',
                 fontWeight: 400,
                 whiteSpace: 'nowrap',
               }}
@@ -110,7 +110,7 @@ export default function Header() {
               borderRadius: '8px 3px 8px 3px',
               backgroundColor: `color-mix(in srgb, var(--color-secondary) 10%, transparent)`,
               border: `1px solid color-mix(in srgb, var(--color-secondary) 18%, transparent)`,
-              color: `color-mix(in srgb, var(--color-off-white) 85%, transparent)`,
+              color: `color-mix(in srgb, var(--color-primary) 85%, transparent)`,
               fontFamily: 'var(--font-sans)',
               fontSize: '10px',
               fontWeight: 500,
@@ -128,14 +128,14 @@ export default function Header() {
               const t = e.currentTarget
               t.style.backgroundColor = `color-mix(in srgb, var(--color-secondary) 20%, transparent)`
               t.style.borderColor = `color-mix(in srgb, var(--color-secondary) 40%, transparent)`
-              t.style.color = 'var(--color-off-white)'
+              t.style.color = 'var(--color-primary)'
               t.style.boxShadow = `0 0 16px color-mix(in srgb, var(--color-secondary) 10%, transparent)`
             }}
             onMouseLeave={(e) => {
               const t = e.currentTarget
               t.style.backgroundColor = `color-mix(in srgb, var(--color-secondary) 10%, transparent)`
               t.style.borderColor = `color-mix(in srgb, var(--color-secondary) 18%, transparent)`
-              t.style.color = `color-mix(in srgb, var(--color-off-white) 85%, transparent)`
+              t.style.color = `color-mix(in srgb, var(--color-primary) 85%, transparent)`
               t.style.boxShadow = 'none'
             }}
           >

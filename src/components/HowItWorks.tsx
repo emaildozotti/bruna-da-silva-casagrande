@@ -61,7 +61,7 @@ export default function HowItWorks() {
             className="text-3xl md:text-4xl lg:text-5xl mb-14 md:mb-20"
             style={{
               fontFamily: 'var(--font-display)',
-              color: 'var(--color-off-white)',
+              color: 'var(--color-primary)',
               fontWeight: 400,
               lineHeight: 1.2,
             }}
@@ -100,7 +100,7 @@ export default function HowItWorks() {
                     className="text-lg md:text-xl"
                     style={{
                       fontFamily: 'var(--font-display)',
-                      color: 'var(--color-off-white)',
+                      color: 'var(--color-primary)',
                       fontWeight: 400,
                       lineHeight: 1.3,
                     }}
@@ -112,7 +112,7 @@ export default function HowItWorks() {
                   className="text-sm md:text-base leading-relaxed"
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    color: 'var(--color-bg-warm)',
+                    color: 'var(--color-primary)',
                     fontWeight: 300,
                     lineHeight: 1.85,
                     opacity: 0.8,
@@ -131,7 +131,7 @@ export default function HowItWorks() {
             className="mt-10 text-sm md:text-base"
             style={{
               fontFamily: 'var(--font-sans)',
-              color: 'var(--color-bg-warm)',
+              color: 'var(--color-primary)',
               fontWeight: 300,
               opacity: 0.55,
               fontStyle: 'italic',

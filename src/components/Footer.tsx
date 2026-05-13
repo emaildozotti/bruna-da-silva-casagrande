@@ -51,7 +51,7 @@ export default function Footer() {
                 className="text-3xl md:text-4xl lg:text-5xl leading-tight"
                 style={{
                   fontFamily: 'var(--font-display)',
-                  color: 'var(--color-off-white)',
+                  color: 'var(--color-primary)',
                   fontWeight: 400,
                   lineHeight: 1.25,
                   maxWidth: '700px',
@@ -67,7 +67,7 @@ export default function Footer() {
                 className="text-sm md:text-base"
                 style={{
                   fontFamily: 'var(--font-sans)',
-                  color: 'var(--color-bg-warm)',
+                  color: 'var(--color-primary)',
                   fontWeight: 300,
                   opacity: 0.6,
                   maxWidth: '420px',
@@ -111,7 +111,7 @@ export default function Footer() {
             className="text-xs md:text-sm"
             style={{
               fontFamily: 'var(--font-sans)',
-              color: 'var(--color-bg-warm)',
+              color: 'var(--color-primary)',
               opacity: 0.4,
               fontWeight: 300,
               maxWidth: '600px',
@@ -124,7 +124,7 @@ export default function Footer() {
             className="text-xs"
             style={{
               fontFamily: 'var(--font-sans)',
-              color: 'var(--color-bg-warm)',
+              color: 'var(--color-primary)',
               opacity: 0.3,
               fontWeight: 300,
               maxWidth: '600px',
@@ -147,19 +147,19 @@ export default function Footer() {
         <div className="container-ultra flex flex-col md:flex-row items-center justify-between gap-3">
           <span
             className="eyebrow-ultra"
-            style={{ color: 'var(--color-bg-warm)', opacity: 0.25 }}
+            style={{ color: 'var(--color-primary)', opacity: 0.25 }}
           >
             {SITE.nomeCompleto}
           </span>
           <span
             className="eyebrow-ultra"
-            style={{ color: 'var(--color-bg-warm)', opacity: 0.25 }}
+            style={{ color: 'var(--color-primary)', opacity: 0.25 }}
           >
             {SITE.especialidadeCurta} | {SITE.crp}
           </span>
           <span
             className="eyebrow-ultra"
-            style={{ color: 'var(--color-bg-warm)', opacity: 0.25 }}
+            style={{ color: 'var(--color-primary)', opacity: 0.25 }}
           >
             {new Date().getFullYear()} Todos os direitos reservados
           </span>
