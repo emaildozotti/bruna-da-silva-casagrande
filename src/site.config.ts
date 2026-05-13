@@ -15,7 +15,7 @@ export const SITE = {
   waLink:
     'https://wa.me/5521970835837?text=Ol%C3%A1%2C%20Bruna!%20Vi%20sua%20p%C3%A1gina%20e%20quero%20agendar%20minha%20Sess%C3%A3o%20Clareza%20e%20Reconex%C3%A3o.',
   videoUrl: 'https://www.youtube.com/embed/8uDLXvAdrEA',
-  videoPoster: '', // opcional: path da imagem de capa do video (ex: '/video-poster.jpg'). Vazio = usa o poster gerado.
+  videoPoster: '/video-poster.png',
   fotoHero: '/foto-hero.png',
   fotoAbout: '/foto-about.png',
 }

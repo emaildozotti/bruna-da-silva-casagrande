@@ -106,16 +106,29 @@ export default function VideoSection() {
                       aria-hidden="true"
                     />
 
-                    {/* Dot pattern overlay */}
-                    <div
-                      className="absolute inset-0"
-                      style={{
-                        backgroundImage: `radial-gradient(color-mix(in srgb, var(--color-secondary) 10%, transparent) 1px, transparent 1px)`,
-                        backgroundSize: '20px 20px',
-                        opacity: 0.5,
-                      }}
-                      aria-hidden="true"
-                    />
+                    {/* Dot pattern overlay — escondido quando ha videoPoster */}
+                    {!SITE.videoPoster && (
+                      <div
+                        className="absolute inset-0"
+                        style={{
+                          backgroundImage: `radial-gradient(color-mix(in srgb, var(--color-secondary) 10%, transparent) 1px, transparent 1px)`,
+                          backgroundSize: '20px 20px',
+                          opacity: 0.5,
+                        }}
+                        aria-hidden="true"
+                      />
+                    )}
+
+                    {/* Dark scrim quando ha videoPoster — garante contraste do play button */}
+                    {SITE.videoPoster && (
+                      <div
+                        className="absolute inset-0"
+                        style={{
+                          background: 'linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 100%)',
+                        }}
+                        aria-hidden="true"
+                      />
+                    )}
 
                     {/* Decorative line top */}
                     <div
@@ -129,22 +142,24 @@ export default function VideoSection() {
                       aria-hidden="true"
                     />
 
-                    {/* Initials watermark */}
-                    <div
-                      className="absolute"
-                      style={{
-                        fontFamily: 'var(--font-display)',
-                        fontSize: '8rem',
-                        lineHeight: 1,
-                        color: 'var(--color-primary)',
-                        opacity: 0.03,
-                        userSelect: 'none',
-                        pointerEvents: 'none',
-                      }}
-                      aria-hidden="true"
-                    >
-                      {SITE.iniciais}
-                    </div>
+                    {/* Initials watermark — so quando nao tem videoPoster */}
+                    {!SITE.videoPoster && (
+                      <div
+                        className="absolute"
+                        style={{
+                          fontFamily: 'var(--font-display)',
+                          fontSize: '8rem',
+                          lineHeight: 1,
+                          color: 'var(--color-primary)',
+                          opacity: 0.03,
+                          userSelect: 'none',
+                          pointerEvents: 'none',
+                        }}
+                        aria-hidden="true"
+                      >
+                        {SITE.iniciais}
+                      </div>
+                    )}
 
                     {/* Play button */}
                     <motion.div
